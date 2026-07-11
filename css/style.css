@@ -47,6 +47,12 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 
 z-index:1000;
 
+.logo img{
+    height:55px;
+    width:auto;
+    display:block;
+}
+
 }
 
 nav h2{
