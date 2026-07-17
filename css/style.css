@@ -25,33 +25,25 @@ body{
 
 nav{
 
-position:fixed;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:1000;
 
-top:0;
-
-left:0;
-
-width:100%;
-
-background:white;
-
-padding:20px 10%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-z-index:1000;
+}
 
 .logo img{
+
     height:55px;
     width:auto;
     display:block;
-}
 
 }
 
@@ -210,7 +202,7 @@ margin-bottom:10px;
 
 .about-title h2{
 
-font-size:42px;
+    font-size:42px;
 
 }
 
@@ -462,7 +454,7 @@ flex:1;
 
 .contact-info h3{
 
-font-size:30px;
+font-size:24px;
 
 margin-bottom:20px;
 
@@ -595,13 +587,13 @@ line-height:1.8;
 
 footer hr{
 
-margin:40px 0 20px;
+    margin:50px 0 30px;
 
-border:none;
+    border:none;
 
-height:1px;
+    height:1px;
 
-background:#444;
+    background:rgba(255,255,255,.15);
 
 }
 
@@ -615,13 +607,57 @@ font-size:14px;
 
 }
 
-@media (max-width:768px){
+/* ==========================
+   Mobile Responsive Design
+========================== */
+
+@media (max-width: 768px) {
+
+
+nav h2{
+    font-size:24px;
+}
+
+nav ul{
+    margin-top:15px;
+    gap:10px;
+}
+
+nav ul li{
+    margin-left:0;
+}
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        line-height:1.3;
+
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
 
 nav{
 
 flex-direction:column;
 
-padding:20px;
+padding:15px 20px;
 
 }
 
@@ -659,6 +695,18 @@ text-align:center;
 
 }
 
+.about{
+    padding:60px 20px;
+}
+
+.features{
+    grid-template-columns:1fr;
+}
+
+.about-content{
+    width:100%;
+}
+
 .service-grid{
 
 grid-template-columns:1fr;
@@ -682,6 +730,30 @@ flex-direction:column;
 grid-template-columns:1fr;
 
 text-align:center;
+
+}
+
+footer hr{
+
+    margin:50px 0 30px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.hero-image img{
+
+    max-width:400px;
+    width:100%;
+    margin:auto;
+    display:block;
+
+}
+
+.section-title h2,
+.about-title h2{
+
+    font-size:30px;
 
 }
 
@@ -781,10 +853,4 @@ text-align:center;
 
 }
 
-footer hr{
 
-    margin:50px 0 30px;
-    border:none;
-    border-top:1px solid rgba(255,255,255,.15);
-
-}
